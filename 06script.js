@@ -59,7 +59,7 @@ const ob4={...ob1,...ob2,...ob3};
 console.log(ob4);
 
 console.log(Object.keys(tinderUser));   //returns the keys in form of array- we can operate loops then
-console.log(Object.values(tinderUser));   // returns values
+console.log(Object.values(tinderUser));   // returns values in array
 console.log(Object.entries(tinderUser));  // returns key value pair
 
 // object de-structuring --- lecture 18
