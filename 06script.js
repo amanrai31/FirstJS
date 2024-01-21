@@ -1,4 +1,5 @@
                   // OBJECTS
+        // We can add variables,Array,objects and functions in an Object
 
 let mysym= Symbol("key1");                  
 let obj1={
@@ -9,7 +10,8 @@ let obj1={
     email: "aman970rai@gmail.com",
     isLoggedIn: false,
     lastLoginDays:["monday", "saturday"],
-    [mysym]:"mykey1"
+    [mysym]:"mykey1",
+    
 
 }                                           
 obj1.greeting= function(){                             // ADDING FUNCTION TO AN OBJECT
@@ -17,7 +19,7 @@ obj1.greeting= function(){                             // ADDING FUNCTION TO AN 
 }
 console.log(obj1.name);
 console.log(obj1["name"]);                        // other way to log object
-console.log(obj1["isLoggedIn"]);
+console.log(obj1.isLoggedIn);
 console.log(obj1["full name"]);                    // you cant find full name by obj1.fullname
 console.log(obj1[mysym]);
 console.log(".......................................................................");
@@ -29,6 +31,7 @@ Object.freeze(obj1);                             // frezze changes in obj1
 obj1.email="aman07rai@yahoo.com"                // this will not reflect as obj1 frezzed
 console.log(obj1.email);
 console.log(obj1.greeting());
+
 console.log(".............................................................................");
 
 let tinderUser = new Object();                                // singleton obj
@@ -59,5 +62,5 @@ console.log(Object.keys(tinderUser));   //returns the keys in form of array- we 
 console.log(Object.values(tinderUser));   // returns values
 console.log(Object.entries(tinderUser));  // returns key value pair
 
-// object de-structuring --- lecture 19
-
+// object de-structuring --- lecture 18
+// JSON Formatter--- tool to understand JSON file structure
